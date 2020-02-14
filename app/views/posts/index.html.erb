@@ -1,6 +1,6 @@
 <% @posts.each do |post| %>
   <p><%= post.message %><br>
-  <%= "iluvcatz123" %><br>
+  User ID: <%= post.user_id %><br>
   <%= post.created_at.strftime("%m/%d/%Y, %H:%M") %>
   <%= link_to 'Destroy', post, :method => :delete %>
   </p>
